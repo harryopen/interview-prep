@@ -1,7 +1,7 @@
 
 const ContentDisplay = () => {
   return (
-    <div>ContentDisplay</div>
+    <></>
   )
 }
 
