@@ -17,7 +17,7 @@ const Landing = () => {
       {" "}
       <TopicList
         topics={topics}
-        setSelectedTopic={setSelectedTopic}
+        selectedTopic={selectedTopic}
         onTopicSelect={handleTopicSelect}
       />
       <ContentDisplay content={currentContent} />
