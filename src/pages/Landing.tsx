@@ -2,12 +2,12 @@ import { useState } from "react";
 import ContentDisplay from "./component/ContentDisplay";
 import TopicList from "./component/TopicList";
 import { topics } from "../assets/data";
-import { topicContent } from "../assets/data";
 
 const Landing = () => {
-  const [selectedTopic, setSelectedTopic] =
-    useState<string>(`react-fundamentals`);
-  const currentContent = topicContent[selectedTopic] || null;
+  const [selectedTopic, setSelectedTopic] = useState<string>(
+    `Star Rating Component`
+  );
+  // const currentContent = topicContent[selectedTopic] || null;
 
   const handleTopicSelect = (TopicId: string) => {
     setSelectedTopic(TopicId);
@@ -20,7 +20,7 @@ const Landing = () => {
         selectedTopic={selectedTopic}
         onTopicSelect={handleTopicSelect}
       />
-      <ContentDisplay content={currentContent} />
+      <ContentDisplay content={selectedTopic} />
     </div>
   );
 };

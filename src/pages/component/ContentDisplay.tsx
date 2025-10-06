@@ -1,8 +1,35 @@
+import Accordians from "./Accordians";
+import StartRating from "./StartRating";
 
-const ContentDisplay = () => {
-  return (
-    <></>
-  )
+interface ContentDisplayProps {
+  content: string;
 }
+const ContentDisplay = ({ content }: ContentDisplayProps) => {
+  const renderComponent = () => {
+    switch (content) {
+      case "Star Rating Component":
+        return <StartRating />;
+       case "Accordian component":
+        return <Accordians/> 
+      default:
+        return <h2>Select a question from the left bar 👈</h2>;
+    }
+  };
 
-export default ContentDisplay
+  return (
+    <div className="flex-1 p-8 overflow-y-auto">
+      <div>
+        <h1>React Fundamentals</h1>
+        <p>
+          Master the building blocks of React development with comprehensive
+          guides and practical examples.
+        </p>
+        <div>
+            {renderComponent()}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ContentDisplay;
