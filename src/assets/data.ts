@@ -26,15 +26,14 @@ export interface TopicContent {
 
 export const topics: Topic[] = [
   {
-    id: "react-fundamentals",
+    id: "Star Rating Component",
     title: "React Fundamentals",
-    description:
-      "Learn the core concepts of React including components, props, and state management.",
+    description: "Star Rating Component",
     category: "Development",
     itemCount: 8,
   },
   {
-    id: "javascript-es6",
+    id: "Accordian component",
     title: "Modern JavaScript",
     description:
       "Explore ES6+ features and modern JavaScript development practices.",
@@ -84,7 +83,7 @@ export const topics: Topic[] = [
 ];
 
 export const topicContent: Record<string, TopicContent> = {
-  "react-fundamentals": {
+  "Star Rating Component": {
     id: "react-fundamentals",
     title: "React Fundamentals",
     description:
