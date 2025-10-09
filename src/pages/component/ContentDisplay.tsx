@@ -1,4 +1,5 @@
 import Accordians from "./Accordians";
+import LoadMoreButton from "./LoadMoreButton";
 import StartRating from "./StartRating";
 
 interface ContentDisplayProps {
@@ -11,6 +12,8 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
         return <StartRating />;
        case "Accordian component":
         return <Accordians/> 
+        case "Load More Button":
+            return <LoadMoreButton/>
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }

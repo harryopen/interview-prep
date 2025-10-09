@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Accordians = () => {
-  const [isMultiSelect, setIsMultiSelect] = useState(false);
+  const [isMultiSelect, setIsMultiSelect] = useState<boolean>(false);
   const [openAccordions, setOpenAccordions] = useState<number[]>([]);
 
   const toggleAccordion = (id: number) => {

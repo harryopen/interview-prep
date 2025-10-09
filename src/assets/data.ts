@@ -41,7 +41,7 @@ export const topics: Topic[] = [
     itemCount: 12,
   },
   {
-    id: "css-grid",
+    id: "Load More Button",
     title: "CSS Grid Layout",
     description:
       "Master CSS Grid for creating responsive and flexible layouts.",
