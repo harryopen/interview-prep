@@ -1,5 +1,6 @@
 import Accordians from "./Accordians";
 import LoadMoreButton from "./LoadMoreButton";
+import QrGenerator from "./QrGenerator";
 import StartRating from "./StartRating";
 
 interface ContentDisplayProps {
@@ -10,10 +11,12 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
     switch (content) {
       case "Star Rating Component":
         return <StartRating />;
-       case "Accordian component":
-        return <Accordians/> 
-        case "Load More Button":
-            return <LoadMoreButton/>
+      case "Accordian component":
+        return <Accordians />;
+      case "Load More Button":
+        return <LoadMoreButton />;
+      case "Qr code generator":
+        return <QrGenerator />;
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
@@ -27,9 +30,7 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
           Master the building blocks of React development with comprehensive
           guides and practical examples.
         </p>
-        <div>
-            {renderComponent()}
-        </div>
+        <div>{renderComponent()}</div>
       </div>
     </div>
   );

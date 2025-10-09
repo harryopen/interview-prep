@@ -35,24 +35,21 @@ export const topics: Topic[] = [
   {
     id: "Accordian component",
     title: "Modern JavaScript",
-    description:
-      "Explore ES6+ features and modern JavaScript development practices.",
+    description: "Accordian component",
     category: "Development",
     itemCount: 12,
   },
   {
     id: "Load More Button",
     title: "CSS Grid Layout",
-    description:
-      "Master CSS Grid for creating responsive and flexible layouts.",
+    description: "Load More Button",
     category: "Development",
     itemCount: 6,
   },
   {
-    id: "product-strategy",
+    id: "Qr code generator",
     title: "Product Strategy",
-    description:
-      "Learn how to develop effective product strategies and roadmaps.",
+    description: "Qr code Generator",
     category: "Business",
     itemCount: 10,
   },
@@ -124,7 +121,7 @@ export const topicContent: Record<string, TopicContent> = {
       },
     ],
   },
-  "javascript-es6": {
+  "Accordian component": {
     id: "javascript-es6",
     title: "Modern JavaScript (ES6+)",
     description:
@@ -154,7 +151,7 @@ export const topicContent: Record<string, TopicContent> = {
       },
     ],
   },
-  "css-grid": {
+  "Qr code generator": {
     id: "css-grid",
     title: "CSS Grid Layout",
     description:
