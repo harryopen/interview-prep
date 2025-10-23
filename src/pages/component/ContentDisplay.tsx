@@ -2,6 +2,7 @@ import Accordians from "./Accordians";
 import LoadMoreButton from "./LoadMoreButton";
 import QrGenerator from "./QrGenerator";
 import StartRating from "./StartRating";
+import ParentTab from "./tabs/parentTab";
 
 interface ContentDisplayProps {
   content: string;
@@ -17,6 +18,8 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
         return <LoadMoreButton />;
       case "Qr code generator":
         return <QrGenerator />;
+        case "Dynamic Tabs":
+          return <ParentTab/>
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
