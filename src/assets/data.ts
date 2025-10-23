@@ -54,10 +54,9 @@ export const topics: Topic[] = [
     itemCount: 10,
   },
   {
-    id: "market-research",
+    id: "Dynamic Tabs",
     title: "Market Research",
-    description:
-      "Techniques for conducting thorough market research and analysis.",
+    description: "Dynamic Tabs",
     category: "Business",
     itemCount: 7,
   },
@@ -170,7 +169,7 @@ export const topicContent: Record<string, TopicContent> = {
       },
     ],
   },
-  "product-strategy": {
+  "Dynamic Tabs": {
     id: "product-strategy",
     title: "Product Strategy",
     description:
