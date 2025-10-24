@@ -1,9 +1,10 @@
 import Accordians from "./Accordians";
+import AutoCompleteSuggestion from "./AutoCompleteSuggestion";
 import GithubFinder from "./GithubFinder";
 import LoadMoreButton from "./LoadMoreButton";
 import QrGenerator from "./QrGenerator";
 import StartRating from "./StartRating";
-import ParentTab from "./tabs/parentTab";
+import ParentTab from "./tabs/ParentTab";
 
 interface ContentDisplayProps {
   content: string;
@@ -22,7 +23,9 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
       case "Dynamic Tabs":
         return <ParentTab />;
       case "github Profile":
-        return <GithubFinder/>;
+        return <GithubFinder />;
+      case "autocomplete-suggestion":
+        return <AutoCompleteSuggestion />;
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
