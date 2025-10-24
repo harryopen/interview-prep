@@ -69,10 +69,10 @@ export const topics: Topic[] = [
     itemCount: 9,
   },
   {
-    id: "color-theory",
-    title: "Color Theory",
+    id: "autocomplete-suggestion",
+    title: "Auto-complete",
     description:
-      "Understanding color relationships and how to use them effectively in design.",
+      "Search and get suggestion",
     category: "Design",
     itemCount: 5,
   },
@@ -218,7 +218,7 @@ export const topicContent: Record<string, TopicContent> = {
       },
     ],
   },
-  "ui-principles": {
+  "autocomplete-suggestion": {
     id: "ui-principles",
     title: "UI Design Principles",
     description:
