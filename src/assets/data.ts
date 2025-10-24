@@ -61,10 +61,10 @@ export const topics: Topic[] = [
     itemCount: 7,
   },
   {
-    id: "ui-principles",
-    title: "UI Design Principles",
+    id: "github Profile",
+    title: "github Profile",
     description:
-      "Fundamental principles for creating beautiful and functional user interfaces.",
+      "github-finder",
     category: "Design",
     itemCount: 9,
   },
@@ -199,7 +199,7 @@ export const topicContent: Record<string, TopicContent> = {
       },
     ],
   },
-  "market-research": {
+  "github Profile": {
     id: "market-research",
     title: "Market Research",
     description:

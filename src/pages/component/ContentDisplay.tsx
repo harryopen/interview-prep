@@ -1,4 +1,5 @@
 import Accordians from "./Accordians";
+import GithubFinder from "./GithubFinder";
 import LoadMoreButton from "./LoadMoreButton";
 import QrGenerator from "./QrGenerator";
 import StartRating from "./StartRating";
@@ -18,8 +19,10 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
         return <LoadMoreButton />;
       case "Qr code generator":
         return <QrGenerator />;
-        case "Dynamic Tabs":
-          return <ParentTab/>
+      case "Dynamic Tabs":
+        return <ParentTab />;
+      case "github Profile":
+        return <GithubFinder/>;
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
