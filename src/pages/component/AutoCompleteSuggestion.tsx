@@ -52,7 +52,9 @@ const AutoCompleteSuggestion = () => {
 
       {/* List of filtered users */}
       {filteredData.map((name, index) => (
-        <h5 key={index}>{name}</h5>
+        <h5 onClick={()=>setSearchParam(name)}className="cursor-pointer" key={index}>
+          {name}
+        </h5>
       ))}
     </div>
   );
