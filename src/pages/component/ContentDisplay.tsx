@@ -2,6 +2,7 @@ import Accordians from "./Accordians";
 import AutoCompleteSuggestion from "./AutoCompleteSuggestion";
 import GithubFinder from "./GithubFinder";
 import LoadMoreButton from "./LoadMoreButton";
+import Model from "./Model";
 import QrGenerator from "./QrGenerator";
 import StartRating from "./StartRating";
 import ParentTab from "./tabs/ParentTab";
@@ -28,7 +29,9 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
       case "autocomplete-suggestion":
         return <AutoCompleteSuggestion />;
       case "tic-tac-toe":
-        return <TicTacToe/>  
+        return <TicTacToe />;
+      case "show-Modal":
+        return <Model />;
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
