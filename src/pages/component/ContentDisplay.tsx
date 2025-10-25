@@ -5,6 +5,7 @@ import LoadMoreButton from "./LoadMoreButton";
 import QrGenerator from "./QrGenerator";
 import StartRating from "./StartRating";
 import ParentTab from "./tabs/ParentTab";
+import TicTacToe from "./TicTacToe";
 
 interface ContentDisplayProps {
   content: string;
@@ -26,6 +27,8 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
         return <GithubFinder />;
       case "autocomplete-suggestion":
         return <AutoCompleteSuggestion />;
+      case "tic-tac-toe":
+        return <TicTacToe/>  
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
