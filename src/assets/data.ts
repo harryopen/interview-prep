@@ -63,16 +63,21 @@ export const topics: Topic[] = [
   {
     id: "github Profile",
     title: "github Profile",
-    description:
-      "github-finder",
+    description: "github-finder",
     category: "Design",
     itemCount: 9,
   },
   {
     id: "autocomplete-suggestion",
     title: "Auto-complete",
-    description:
-      "Search and get suggestion",
+    description: "Search and get suggestion",
+    category: "Design",
+    itemCount: 5,
+  },
+  {
+    id: "tic-tac-toe",
+    title: "Auto-complete",
+    description: "tic tac game",
     category: "Design",
     itemCount: 5,
   },
@@ -248,11 +253,11 @@ export const topicContent: Record<string, TopicContent> = {
       },
     ],
   },
-  "color-theory": {
+  "tic-tac-toe": {
     id: "color-theory",
     title: "Color Theory",
     description:
-      "Understand how colors work together and learn to create effective color palettes for your designs.",
+      "tic tac toe game",
     items: [
       {
         id: "1",
