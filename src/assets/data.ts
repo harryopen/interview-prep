@@ -88,6 +88,13 @@ export const topics: Topic[] = [
     category: "Design",
     itemCount: 5,
   },
+  {
+    id: "get-windowSize",
+    title: "get-windowSize",
+    description: "show-modal",
+    category: "Design",
+    itemCount: 5,
+  },
 ];
 
 export const topicContent: Record<string, TopicContent> = {
@@ -282,6 +289,24 @@ export const topicContent: Record<string, TopicContent> = {
     id: "color-theory",
     title: "Color Theory",
     description: "tic tac toe game",
+    items: [
+      {
+        id: "1",
+        title: "Understanding Color Harmony",
+        content:
+          "Color harmony refers to the arrangement of colors that are pleasing to the eye and create a sense of order and balance. Different color harmonies like complementary, analogous, and triadic create different moods and effects. Understanding these relationships helps designers create cohesive and visually appealing palettes.",
+        author: "Anna Martinez",
+        readTime: "6 min read",
+        views: 1670,
+        tags: ["color-harmony", "palettes", "theory"],
+        publishedAt: "6 days ago",
+      },
+    ],
+  },
+  "get-windowSize": {
+    id: "color-theory",
+    title: "Color Theory",
+    description: "get-windowSize",
     items: [
       {
         id: "1",
