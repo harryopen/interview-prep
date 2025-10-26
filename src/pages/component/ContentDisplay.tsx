@@ -4,6 +4,7 @@ import GithubFinder from "./GithubFinder";
 import LoadMoreButton from "./LoadMoreButton";
 import Model from "./Model";
 import QrGenerator from "./QrGenerator";
+import ResponsiveComponent from "./ResponsiveComponent";
 import StartRating from "./StartRating";
 import ParentTab from "./tabs/ParentTab";
 import TicTacToe from "./TicTacToe";
@@ -32,6 +33,8 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
         return <TicTacToe />;
       case "show-Modal":
         return <Model />;
+      case "get-windowSize":
+        return <ResponsiveComponent />;
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
