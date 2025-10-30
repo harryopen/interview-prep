@@ -7,6 +7,7 @@ import QrGenerator from "./QrGenerator";
 import ResponsiveComponent from "./ResponsiveComponent";
 import StartRating from "./StartRating";
 import ParentTab from "./tabs/ParentTab";
+import TestContextLogic from "./TestContextLogic";
 import TicTacToe from "./TicTacToe";
 
 interface ContentDisplayProps {
@@ -35,6 +36,8 @@ const ContentDisplay = ({ content }: ContentDisplayProps) => {
         return <Model />;
       case "get-windowSize":
         return <ResponsiveComponent />;
+      case "context-api":
+        return<TestContextLogic/>
       default:
         return <h2>Select a question from the left bar 👈</h2>;
     }
